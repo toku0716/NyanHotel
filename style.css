@@ -1,0 +1,146 @@
+/* ページ全体 */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f3ead7;
+  color: #344b2b;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+/* ヘッダー */
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #a8c68f;
+  color: #344b2b;
+}
+
+header h1 {
+  color: #344b2b;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+/* ナビゲーション */
+nav a {
+  color: #344b2b;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #ffffff;
+}
+
+/* セクション共通 */
+section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+}
+
+/* 画像 */
+img {
+  max-width: 100%;
+  width: 500px;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 15px;
+}
+
+/* セクション見出し */
+section h2 {
+  color: #344b2b;
+  border-bottom: 2px solid #a8c68f;
+  padding-bottom: 10px;
+}
+
+/* テーブル */
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  border: 1px solid #a8c68f;
+  background-color: #ffffff;
+}
+
+/* テーブル見出し */
+th {
+  background-color: #a8c68f;
+  color: #344b2b;
+  padding: 15px;
+}
+
+/* テーブルのセル */
+td {
+  padding: 15px;
+  text-align: center;
+  border: 1px solid #d6dfcc;
+}
+
+/* 予約フォーム */
+#reservation p {
+  color: #555555;
+}
+
+.reservation-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+/* 選択欄 */
+#room-type,
+#people,
+#start,
+#name {
+  width: 250px;
+  height: 44px;
+  padding: 0 12px;
+  border: 1px solid #a8c68f;
+  border-radius: 6px;
+  background-color: #f3ead7;
+  font-size: 16px;
+  color: #344b2b;
+  box-sizing: border-box;
+  margin: 0 auto;
+  display: block;
+}
+
+/* 予約ボタン */
+#reservation button {
+  background-color: #a8c68f;
+  color: #344b2b;
+  border: none;
+  padding: 12px 35px;
+  margin-top: 10px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#reservation-message {
+  color: #344b2b;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* お問い合わせ */
+#contact p {
+  color: #555555;
+  line-height: 1.8;
+}
+
+/* ページ内リンクのスクロール */
+html {
+  scroll-behavior: smooth;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>😺NyanHotel予約サイト😺</title>
+</head>
+
+<body>
+
+  <!-- ヘッダー -->
+  <header>
+    <h1>🐈NyanHotel🐈</h1>
+
+    <nav>
+      <a href="#home">ホーム</a>
+      <a href="#rooms">お部屋一覧</a>
+      <a href="#reservation">ご予約</a>
+      <a href="#contact">お問い合わせ</a>
+    </nav>
+  </header>
+
+  <!-- ホーム -->
+  <section id="home">
+    <h2>ようこそNyanHotelへ!</h2>
+
+    <p>
+      猫の従業員がお客様をお出迎えします。<br>
+      心安らぐ癒やしの時間をお過ごしください。<br>
+    </p>
+
+    <img src="images/CatHotel.jpg" alt="猫の従業員">
+  </section>
+
+  <!-- お部屋一覧 -->
+  <section id="rooms">
+    <h2>お部屋一覧</h2>
+
+    <table>
+      <tr>
+        <th>お部屋</th>
+        <th>値段</th>
+      </tr>
+      <tr>
+        <td>シングルベッド</td>
+        <td>6000円</td>
+      </tr>
+      <tr>
+        <td>セミダブルベッド</td>
+        <td>8000円</td>
+      </tr>
+      <tr>
+        <td>ダブルベッド</td>
+        <td>10000円</td>
+      </tr>
+      <tr>
+        <td>ツインルーム</td>
+        <td>12000円</td>
+      </tr>
+    </table>
+  </section>
+
+  <!-- ご予約 -->
+  <section id="reservation">
+    <h2>ご予約</h2>
+
+
+    <p>ご希望のお部屋と宿泊人数をお選びください。</p>
+    <!--名前を入力-->
+    <label for="name">お名前</label>
+    <input type="text" id="name" name="お名前" placeholder="ニャン太郎" required>
+    <div class="reservation-item">
+      <label for="room-type">お部屋タイプ：</label>
+      <select id="room-type" name="room_type">
+        <option value="選択してください">選択してください</option>
+        <option value="シングル">シングル</option>
+        <option value="セミダブルベッド">セミダブルベッド</option>
+        <option value="ダブルベッド">ダブルベッド</option>
+        <option value="ツインルーム">ツインルーム</option>
+      </select>
+    </div>
+
+    <div class="reservation-item">
+      <label for="people">宿泊人数：</label>
+      <select id="people" name="people">
+        <option value="">選択してください</option>
+        <option value="1">1匹</option>
+        <option value="2">2匹</option>
+        <option value="3">3匹</option>
+        <option value="4">4匹</option>
+        <option value="5">5匹</option>
+      </select>
+      <div class="reservation-item">
+        <label for="start">宿泊日：</label>
+        <input type="date" id="start" name="trip-start">
+      </div>
+
+      <button type="button" id="reserve-button">予約内容を確認する</button>
+      <div id="reservation-message" aria-live="polite"></div>
+  </section>
+
+  <!-- お問い合わせ -->
+  <section id="contact">
+    <h2>お問い合わせ</h2>
+    <p>ご質問・ご相談はこちらから。</p>
+    <p>メール：info@nyanhotel.example</p>
+    <p>0120-22-2222</p>
+  </section>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
